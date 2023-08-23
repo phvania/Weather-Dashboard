@@ -1,0 +1,121 @@
+/* Import google  font - Open Sans */
+/*
+@import url('https:// fonts.googleapis.com/css?family=Open+Sans:wght@400;500;600;700&display=swap');*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+    font-family:  'Open Sans', sans-serif;
+}
+body{
+    background: white;
+}
+h1 {
+    color:  white;
+    padding:18px 0;
+    text-align: center;
+    font-size: 2rem;
+    background:  blue;
+}
+.container{
+
+    gap: 35px;
+    padding: 40px;
+    margin-top: 20px;
+
+
+
+}
+/* .details{
+    width: 900px;
+    height: 200px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    text-align: left;
+    margin-left: 300px;
+    margin-top:-100px;
+} */
+
+.table{
+    display: table-column;
+
+}
+
+
+#main_weather{
+    text-align:center;
+    padding:20px  70px 20px 20px;
+    padding-bottom: 100px;
+    position:relative;
+    margin: bottom 150px;
+    padding-top: -200px;
+
+
+}
+#searchbutton{
+    width: 14%;
+    padding: 8px  0;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color:aliceblue;
+    font-size: 1rem;
+    border-radius:3px;
+    background: blue;
+    margin-top: 10px;
+
+}
+.eight {
+    margin: 10px;
+    height: 50px;
+    width: 20%;
+    margin-top: -200px;
+
+}
+.eight input{
+    margin-top: 5px;
+    
+}
+
+.weather-cards{
+    display: flex;
+    gap: 10px;
+}
+.days-forecast h2{
+    font-size: 1.5rem;
+    padding-top: 10px;
+    margin-bottom: 45px;
+
+}
+
+.days-forecast li{
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    float: right;
+    margin-left: 80px;
+    border: 2px solid black;
+    padding: 0px 5px;
+    margin-right: 5px;
+    
+}
+.weather-cards .cards{
+    list-style: none;
+    color: white;
+    padding: 18px 16px;
+    border-radius:  5px;
+    background: blue;
+    width: calc(100% / 5);
+
+}
+
+.weather-cards  .card img{
+    max-width: 70px;
+    margin: 5px 0 -12px 0;
+}
+ 
+
+
+     
