@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!--  bootstrap CSS CDN-->
+    <link  rel="stylesheet"  href="https://cdnjs.cloudflare.com?ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body> 
+    <!--main heading-->
     <h1>Weather Dashboard</h1>
     <div class="container">
     <section>
 
-    
+    <!-- search city button-->
     <form id="searchform">
         <h2> Search for  a city:</h2>
         <input type="text"id="input"><br>
@@ -19,14 +22,21 @@
     </form>
     <section>
         <div class="container2">
-            
+            <!--current city weather-->
+            <div id="test">
+
+            </div>
+
             <div id="main_weather">
+                
+
+
                 <div  class="current-weather">
                     <div class="details">
-                        <h2> Atlanta ( -/--/----)</h2>
-                        <p> Temp : 76.62 F</p>
-                        <p>Humidity:63%  </p>
-                        <p> Wind: 3.94 mph</p>
+                        <h2 current-city></h2>
+                        <p> Temp : <span class="current" id="temp" ></span></p>
+                        <p>Humidity: <span class="current" id="Humidity" ></span></p>
+                        <p> Wind: <span class="current"  id="Wind" ></span></p>
         
                     </div>
                     <div class="icon">
@@ -39,7 +49,7 @@
             </div></div>
         
             </section>
-    <div class="eight">
+   <!-- <div class="eight">
 
 
     <input type="=text" placeholder="new jercy"> <br>
@@ -49,55 +59,79 @@
     <input type="=text" placeholder="new jercy"><br>
 
     <input type="text" placeholder="new york"><br>
-    <input type="text" placeholder="new york"><br>
+    <input type="text" placeholder="new york"><br>-->
     
     
 
     
     </div>
 </section></div>
-
+<!--for future data will be here-->
     <section>
         <div class="days-forecast">
             <h2>5-Days-Forecast</h2>
-            <ul class="weather- cards">
-                <li class="cards">
-                    <h2>  (9/14/2022)</h2>
-                    <p> Temp : 76.62 F</p>
-                    <p>Humidity:63%  </p>
-                    <p> Wind: 3.94 mph</p>
-                </li>
-                <li class="cards">
-                    <h2>  (9/15/2022)</h2>
-                    <p> Temp : 76.62 F</p>
-                    <p>Humidity:63%  </p>
-                    <p> Wind: 3.94 mph</p></li>
+            <div class="weather- cards">
+                <div  class="cards">
+                    <p id="Date0" ></p>
+                    <p id="Img0"></p>
+                    <img src=`https://openweathermap.org/img/wn/${}@2x.png` alt="" srcset="">
+                    <p> Temp: <span id="Temp0" ></span></p>
+                    <p>Humidity: <span  id="Humidity0"></span> </p>
+                    <p> Wind: <span id="Wind0"></span></p>
+                </div>
+                <div class="cards">
+                    <p id="Date1"></p>
+                    <p id="img1"></p>
+                    <p> Temp : <span id="Temp1"></span></p>
+                    <p>Humidity: <span id="Humidity1"></span> </p>
+                    <p> Wind: <span id="Wind1"></span> </p>
+                </div>           
+                     <div class="cards">
+                    <p id="Date2"></p>
+                    <p id="img2"></p>
+                    <p> Temp : <span id="Temp2"></span></p>
+                    <p>Humidity: <span id="Humidity2"></span> </p>
+                    <p> Wind: <span id="Wind2"></span> </p>
+                </div>
+                <div class="cards">
+                    <p id="Date3"></p>
+                    <p id="img3"></p>
+                    <p> Temp : <span id="Temp3"></span></p>
+                    <p>Humidity: <span id="Humidity3"></span> </p>
+                    <p> Wind: <span id="Wind3"></span> </p>
+                </div>
+                <div class="cards">
+                <p id="Date4"></p>
+                <p id="img4"></p>
+                <p> Temp : <span id="Temp4"></span></p>
+                <p>Humidity: <span id="Humidity4"></span> </p>
+                <p> Wind: <span id="Wind4"></span> </p>
+            </div>
 
 
-                    <li class="cards">
-                        <h2>  (9/16/2022)</h2>
-                        <p> Temp : 76.62 F</p>
-                        <p>Humidity:63%  </p>
-                        <p> Wind: 3.94 mph</p></li> 
-
-                                            <li class="cards">
-                            <h2>(9/17/2022)</h2>
-                            <p> Temp : 76.62 F</p>
-                            <p>Humidity:63%  </p>
-                            <p> Wind: 3.94 mph</p></li>
-
-                            <li class="cards">
-                                <h2>  (9/18/2022)</h2>
-                                <p> Temp : 76.62 F</p>
-                                <p>Humidity:63%  </p>
-                                <p> Wind: 3.94 mph</p></li>       
 
 
-            </ul>
+
+
+
+
+
+
+
+
+            
+
+
+        
 
         </div>
     </section>
-    </body>
+    <!--Jquery js-->
+  <!--  <script  src="https://code.<script src='https://code.jquery.com/jquery.js"></script>  -->
+    <script src="https://cdnjs..cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min/js"></script>
+    <!-- CDN example (jsDelivr) -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <!--code to javascript file-->
     <script src ="./script.js"></script>
 </body>
 </html>
