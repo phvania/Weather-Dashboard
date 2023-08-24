@@ -3,7 +3,18 @@
 Description-----Weather Dashboard is an application to find a weather condition of a given city both the current and future 5 days forecast at the same time.current weather section is including the following weather characters and date.city name,icon image, temperature, wind speed, humidity ect.
 
 LInk---
-https://github.com/phvania/Weather-Dashboard
+
+
+https://github.com/phvania/Weather-Dashboard!
+https://phvania.github.io/Weather-Dashboard/
+
+
+screenshot--
+
+
+[Alt text](image-1.png)
+
+![Alt text](image.png)
 
 
 06 Server-Side APIs: Weather Dashboard
