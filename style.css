@@ -20,16 +20,66 @@ h1 {
 .container{
 
     gap: 35px;
-    padding: 40px;
-    margin-top: 20px;
+    padding: 150px;
+    margin-bottom: 30px;
+    margin-right:50px ;
+}
+.box2{
+position: relative;
+display: flex;
 
 
+    
+}
+h2{
+  margin-right: 100px;  
+}
 
+.days-forecast{
+    margin-left: 600px;
+    margin-bottom: 200px;
+}
+
+.cards{
+    height: 250px;
+    width: 600px;
+    border: solid 1px;
+    display: flex; 
+    
+}
+.five{
+    display: table-column;
+}
+.zero{
+    display: table-column;
+}
+.two{
+    display: table-column;
+}
+.four{
+    display: table-column;
+
+}
+.three{
+    display: table-column;
+}
+.days-forecast{
+    
+    position: relative;
+    padding-bottom: -600px;
+    margin-left: 600px;
+    bottom: 260px;
+    
+    
+
+    
+
+     
 }
 /* .details{
     width: 900px;
     height: 200px;
-    border: 2px solid black;
+    border: 2px solid black
     display: flex;
     flex-direction: column;
     justify-content: top;
@@ -49,13 +99,13 @@ h1 {
     padding:20px  70px 20px 20px;
     padding-bottom: 100px;
     position:relative;
-    margin: bottom 150px;
+    margin: bottom 100px;
     padding-top: -200px;
 
 
 }
 #searchbutton{
-    width: 14%;
+    width: 17%;
     padding: 8px  0;
     cursor: pointer;
     outline: none;
@@ -67,55 +117,14 @@ h1 {
     margin-top: 10px;
 
 }
-.eight {
-    margin: 10px;
-    height: 50px;
-    width: 20%;
-    margin-top: -200px;
 
-}
-.eight input{
-    margin-top: 5px;
+
+
+
+
     
-}
-
-.weather-cards{
-    display: flex;
-    gap: 10px;
-}
-.days-forecast h2{
-    font-size: 1.5rem;
-    padding-top: 10px;
-    margin-bottom: 45px;
-
-}
-
-.days-forecast li{
-    text-align: center;
-    flex-direction: row;
-    justify-content: center;
-    float: right;
-    margin-left: 80px;
-    border: 2px solid black;
-    padding: 0px 5px;
-    margin-right: 5px;
     
-}
-.weather-cards .cards{
-    list-style: none;
-    color: white;
-    padding: 18px 16px;
-    border-radius:  5px;
-    background: blue;
-    width: calc(100% / 5);
-
-}
-
-.weather-cards  .card img{
-    max-width: 70px;
-    margin: 5px 0 -12px 0;
-}
- 
+    
 
 
      

@@ -8,8 +8,18 @@ var mainweather = document.querySelector('#main_weather');
 var currentTemp = document.getElementById("temp");
 var currentHumidity = document.getElementById("Humidity");
 var currentWindSpeed = document.getElementById("Wind");
-var testContainer = document.getElementById('test');
-
+var weathercardsDiv = document.querySelector("weather.cards");
+//   var testContainer = document.getElementById('test');//
+var createweathercard = (weatherItem) => {
+    return `  <div class = "cards ">
+    <P> (${weatherItem.dt_text.split("")[0]})</p>
+    <img src= "https://openweathermap.org/img/wn/${weatherItem.weather[0].icon}2x.png"  alt="">
+    <p> tempreture  ${weatherItem.main.temp}</p>
+    <p>  humidity ${weatherItem.main.humidity}</p>
+    <p>windspeed ${weatherItem.wind.speed}</p></div>
+    `;
+}
+ 
 searchbtn.addEventListener('click', function(e) {
     e.preventDefault();
    // console.log('click');
@@ -70,6 +80,9 @@ function searchCity(cityName) {
            // var endDt = dayjs().add(5, "day").endOf("day").unix();
           //  if ( fiveday(1 , 3)) noon;
            // console.log(fiveday);
+           fiveday.list.includes(forecast  => {
+            var forcastDate = new Date(forecast. dt_text)
+           });
 
         });
     };
@@ -81,32 +94,25 @@ console.log("Current Date: ", now);
 
 
 for(var i=0; i<=4; i++)
-   // console.log(fiveday.list[i]);
+   console.log("fivedays",fivedays.list[i]);
+   
+ 
 
-         (forecast => {
+        (forecast => {
         var forecastDate = new Date(forecast. dt_text).getDate();
         if( 'fiveDays'.includes(forecastDate)) {
             return uniqueForecastDays.push(forecastDate);
         }
     });
-   // console.log('fiveDay');
+
+//clear previous weather data
+cityInput.value = "";
+    weathercardsDiv.innerHTML = "";
+   console.log(fiveDaysForecast);
+   fiveDaysForecast.forEach(weatheritem => {
+    weathercardsDiv.insertAdjecentHTML("beforeend", createweathercard(weatheritem) );
+createweathercard(weatherItem);
+   });
    
         
-    
-
-    
-    
-
-
-
-
-
-
-
-
-//searchbtn.addEventListener('click', function(e)
-  //  e.preventDefault()
-   // console.log('click')
-   // var cityName =input.value.trim()
-   // searchCity( cityName)
 }
